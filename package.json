@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "backendTests": "newman run ./src/backend/collections/todoist-backend.postman_collection.json -e ./src/backend/collections/todoist-backend.postman_environment.json"
+    "backendTests": "newman run ./src/backend/collections/todoist-backend.postman_collection.json -e ./src/backend/collections/todoist-backend.postman_environment.json -r htmlextra --reporter-htmlextra-export ./results/Backend_report.html"
   },
   "keywords": [],
   "author": "",
